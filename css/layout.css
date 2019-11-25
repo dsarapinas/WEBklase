@@ -1,14 +1,77 @@
 header{
     background-color: red;
+    grid-area: h;
 }
 aside{
     background-color: blue;
     width: 250px;
-    height: 250px;
+    /*height: 250px;*/
+    grid-area: a;
 }
 main{
     background-color: darkcyan;
+    grid-area: m;
 }
 footer{
     background-color: coral;
+    grid-area: f;
+}
+
+#grid{
+    display: grid;
+    grid-template-areas:
+        'h h'
+        'a m'
+        'f f';
+    grid-template-columns: 250px auto;
+}
+/*body{*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*}*/
+@media screen and (max-width: 992px){
+    #grid{
+        grid-template-areas:
+                'h a'
+                'm a'
+                'f a';
+    }
+}
+
+@media (min-width: 576px) {
+    #grid{
+        grid-template-areas:
+                'h h'
+                'a a'
+                'm m'
+                'f f';
+    }
+}
+
+@media (min-width: 768px) {
+    #grid{
+        grid-template-areas:
+                'h h'
+                'a a'
+                'm m'
+                'f f';
+    }
+}
+
+@media (min-width: 992px) {
+    #grid{
+        grid-template-areas:
+                'a h'
+                'a m'
+                'a f';
+    }
+}
+
+@media (min-width: 1200px) {
+    #grid{
+        grid-template-areas:
+                'h h'
+                'a m'
+                'f f';
+    }
 }
