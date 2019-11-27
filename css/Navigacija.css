@@ -1,0 +1,46 @@
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style-type: none;
+    float: left;
+    margin: 20px 10px 20px 0;
+    padding-right: 10px;
+    border-right: 2px solid green;
+}
+
+header ul li:last-child {
+    border-right: none;
+}
+
+header ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Animacijos kodas */
+@keyframes example {
+    /*from {background-color: red;}*/
+    /*to {background-color: yellow;}*/
+    0% {
+        color: blue;
+    }
+    50% {
+        color: red;
+    }
+    100% {
+        color: blue;
+    }
+}
+
+/* Elementas kuriam taikysime animacija */
+header ul li:hover a {
+    /*background-color: red;*/
+    animation-name: example;
+    animation-duration: 300ms;
+    animation-iteration-count: infinite;
+}
