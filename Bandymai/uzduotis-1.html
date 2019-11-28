@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<h2 id="suma"></h2>
+<script>
+    let metai = 1999;
+    let menuo = 12;
+    let diena = 28;
+    metai %= 10;
+    menuo %= 10;
+    diena %= 10;
+    let suma = metai + menuo + diena;
+    document.getElementById('suma').innerHTML = suma;
+</script>
+
+<!--<script>-->
+<!--    let metai = 1999;-->
+<!--    let menuo = 12;-->
+<!--    let diena = 28;-->
+<!--    while (metai>9){-->
+<!--    metai /= 10;-->
+<!--    }-->
+<!--    menuo %= 10;-->
+<!--    diena %= 10;-->
+<!--    let suma = metai + menuo + diena;-->
+<!--    document.getElementById('suma').innerHTML = suma;-->
+<!--</script>-->
+</body>
+</html>
