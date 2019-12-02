@@ -9,7 +9,7 @@ aside{
     grid-area: a;
 }
 main{
-    background-color: darkcyan;
+    background-color: #f6eda4;
     grid-area: m;
 }
 footer{
