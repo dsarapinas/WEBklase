@@ -1,9 +1,9 @@
 header{
-    background-color: red;
+    background-color: #ff9d02;
     grid-area: h;
 }
 aside{
-    background-color: blue;
+    background-color: #c4dbff;
     width: 250px;
     /*height: 250px;*/
     grid-area: a;
@@ -29,49 +29,49 @@ footer{
 /*    display: flex;*/
 /*    justify-content: center;*/
 /*}*/
-@media screen and (max-width: 992px){
-    #grid{
-        grid-template-areas:
-                'h a'
-                'm a'
-                'f a';
-    }
-}
+/*@media screen and (max-width: 992px){*/
+/*    #grid{*/
+/*        grid-template-areas:*/
+/*                'h a'*/
+/*                'm a'*/
+/*                'f a';*/
+/*    }*/
+/*}*/
 
-@media (min-width: 576px) {
-    #grid{
-        grid-template-areas:
-                'h h'
-                'a a'
-                'm m'
-                'f f';
-    }
-}
+/*@media (min-width: 576px) {*/
+/*    #grid{*/
+/*        grid-template-areas:*/
+/*                'h h'*/
+/*                'a a'*/
+/*                'm m'*/
+/*                'f f';*/
+/*    }*/
+/*}*/
 
-@media (min-width: 768px) {
-    #grid{
-        grid-template-areas:
-                'h h'
-                'a a'
-                'm m'
-                'f f';
-    }
-}
+/*@media (min-width: 768px) {*/
+/*    #grid{*/
+/*        grid-template-areas:*/
+/*                'h h'*/
+/*                'a a'*/
+/*                'm m'*/
+/*                'f f';*/
+/*    }*/
+/*}*/
 
-@media (min-width: 992px) {
-    #grid{
-        grid-template-areas:
-                'a h'
-                'a m'
-                'a f';
-    }
-}
+/*@media (min-width: 992px) {*/
+/*    #grid{*/
+/*        grid-template-areas:*/
+/*                'a h'*/
+/*                'a m'*/
+/*                'a f';*/
+/*    }*/
+/*}*/
 
-@media (min-width: 1200px) {
-    #grid{
-        grid-template-areas:
-                'h h'
-                'a m'
-                'f f';
-    }
-}
+/*@media (min-width: 1200px) {*/
+/*    #grid{*/
+/*        grid-template-areas:*/
+/*                'h h'*/
+/*                'a m'*/
+/*                'f f';*/
+/*    }*/
+/*}*/
