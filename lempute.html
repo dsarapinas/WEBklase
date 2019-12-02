@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lempute</title>
+</head>
+<body>
+
+<img src="img/lempute-off.jpg" id="lempute"/>
+<button type="button" onclick="junginejimas(lempute.src)">Toggle</button>
+<script>
+    let lempa = false;
+    let lempute = document.getElementById('lempute');
+
+    function junginejimas() {
+        if (lempa) {
+            lempute.src = 'img/lempute-off.jpg';
+            lempa = false;
+        } else {
+            lempute.src = 'img/lempute-on.jpg';
+            lempa = true;
+        }
+
+    }
+</script>
+</body>
+</html>
