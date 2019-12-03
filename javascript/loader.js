@@ -4,13 +4,13 @@
 // Function to 'load JSON' data
 function load(text) {
     let meniu = JSON.parse(text);
-    let meniuString='';
+    let meniuString = '';
     for (let i = 0; i < meniu.length; i++) {
-        let meniuItem=meniu[i];
-        meniuString+='<li><a href="'+meniuItem.adresas + '">'+meniuItem.pavadinimas+'</a></li>';
+        let meniuItem = meniu[i];
+        meniuString += '<li><a href="' + meniuItem.adresas + '">' + meniuItem.pavadinimas + '</a></li>';
     }
 
-    document.querySelector('header>ul').innerHTML=meniuString;
+    document.querySelector('header>ul').innerHTML = meniuString;
 
     // console.log(someData_notJSON[0].blue); // Will log "is my fave color"
 }
@@ -28,4 +28,14 @@ function loadJSON(callback) {
     };
     xobj.send(null);
 }
+
 loadJSON(load);
+
+$(function () {
+    $('header ul li a').click(function (e) {
+        e.preventDefault();
+        let elementas = $(this);
+        let adresas = elementas.attr('href');
+        $('main').load(adresas);
+    });
+});
