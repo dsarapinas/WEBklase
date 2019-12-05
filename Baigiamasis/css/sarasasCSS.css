@@ -8,11 +8,14 @@ body {
 div h1 {
     margin: 1px;
     grid-area: h;
+    color: #0a0063;
 }
-div input{
+
+div input {
     grid-area: s;
 }
-div span{
+
+div span {
     grid-area: b;
 }
 
@@ -27,25 +30,27 @@ div span{
 
 
 ul li {
+    margin-left: 100px;
     width: 500px;
     cursor: pointer;
     position: relative;
     padding: 10px 10px 10px 30px;
     list-style-type: none;
     background: rgba(3, 191, 238, 0.51);
-    font-size: 12px;
+    font-size: 20px;
     border-bottom-style: solid;
     border-right-style: solid;
     border-left-style: solid;
-    grid-area: l;
+    text-align: center;
 }
 
 ul li:first-child {
     border-top-style: solid;
 }
-/*ul li:nth-child(odd) {*/
-/*    background: #0781f9;*/
-/*}*/
+
+ul li:nth-child(odd) {
+    background: rgba(7, 129, 249, 0.5);
+}
 
 ul li:hover {
     width: 600px;
@@ -53,17 +58,16 @@ ul li:hover {
     background: rgba(255, 251, 41, 0.51);
     color: #0a0063;
     border-style: ridge;
+    margin-left: 0px;
 }
 
 ul li.checked {
     background: rgba(5, 5, 5, 0.25);
     color: rgba(255, 0, 35, 0.28);
     text-decoration: line-through;
-    /*float: right;*/
-    /*display: block;*/
-    grid-area: c;
 }
-ul li.checked:hover{
+
+ul li.checked:hover {
     width: 600px;
     font-size: 25px;
     background: rgba(30, 45, 255, 0.51);
@@ -71,34 +75,7 @@ ul li.checked:hover{
     border-style: ridge;
 }
 
- /*Add a "checked" mark when clicked on*/
-/*ul li.checked::before {*/
-/*    content: '';*/
-/*    position: absolute;*/
-/*    border-color: #fff;*/
-/*    border-style: solid;*/
-/*    border-width: 0 2px 2px 0;*/
-/*    top: 10px;*/
-/*    left: 16px;*/
-/*    transform: rotate(45deg);*/
-/*    height: 15px;*/
-/*    width: 7px;*/
-/*}*/
 
-/* Style the close button */
-.close {
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 12px 16px 12px 16px;
-}
-
-.close:hover {
-    background-color: #f44336;
-    color: white;
-}
-
-/* Style the header */
 .header {
     background-color: rgba(244, 67, 54, 0);
     padding: 30px 40px;
@@ -106,49 +83,47 @@ ul li.checked:hover{
     text-align: center;
 }
 
-/* Clear floats after the header */
 .header:after {
     content: "";
     display: table;
     clear: both;
 }
 
-/* Style the input */
 input {
     margin: 0;
     border: none;
     border-radius: 0;
-    width: 75%;
+    width: 50%;
     padding: 10px;
     float: left;
     font-size: 16px;
 }
 
-/* Style the "Add" button */
 .addBtn {
-    padding: 10px;
+    padding: 8px;
     width: 25%;
-    background: #d9d9d9;
+    background: #ebe104;
     color: #555;
     float: left;
     text-align: center;
-    font-size: 16px;
+    font-size: 20px;
     cursor: pointer;
     transition: 0.3s;
     border-radius: 0;
 }
 
 .addBtn:hover {
-    background-color: #bbb;
+    background-color: #f06609;
 }
 
-#grid{
-    display: grid;
-    grid-template-areas:
-            'h h'
-            's b'
-            'l c';
-    grid-template-columns: 250px auto;
+#myUL {
+    float: left;
 }
+
+#myUL2 {
+    float: right;
+    margin-right: 100px;
+}
+
 
 
